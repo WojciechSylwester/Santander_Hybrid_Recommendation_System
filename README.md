@@ -66,9 +66,8 @@ def modelbased(user_id, df, model=DecisionTreeClassifier(max_depth=9)):
     for c in df.columns:
         y_train = df[c].astype('int')
         x_train = df.drop([c], axis = 1)
-        clf = model
-        clf.fit(x_train, y_train)
-        p_train = clf.predict_proba(x_train[x_train.index == user_id])[:,1]
+        model.fit(x_train, y_train)
+        p_train = model.predict_proba(x_train[x_train.index == user_id])[:,1]
         
         mdbs[c] = p_train[0]
         
