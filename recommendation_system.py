@@ -212,7 +212,7 @@ def change_names(col_names, map_products=product_names):
     '''
     Change column names (e.g."ind_recibo_ult1") to product names (e.g."Direct Debit").
     '''
-    return list(map(lambda col_name: product_names[col_name], col_names))
+    return list(map(lambda col_name: map_products[col_name], col_names))
 
 
 def recommendation(user_id, df, hybrid_outcome):
