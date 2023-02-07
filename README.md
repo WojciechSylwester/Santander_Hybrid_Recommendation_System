@@ -1,4 +1,10 @@
 ## 🏦 Santander Hybrid Recommendation System
+### Flask App
+
+![hybrid recommendation app](https://user-images.githubusercontent.com/61654792/217187815-b65cf8db-e3bf-4880-898d-37189dce5a07.png)
+
+In the app, the user can set a value of 1 or 0 for products. After that, the user receive the top 7 product recommendations.
+
 ### Summary
 ![Weighted Hybrid Recommendation System](https://user-images.githubusercontent.com/61654792/217188533-4cc867f2-3888-4b7c-8028-c2971be6bafe.png)
 
@@ -112,8 +118,4 @@ def change_names(col_names, map_products=product_names):
 ### Evaluation
 In the evaluation, I use the average precision metric for 7 products. This metric checks the validity of the recommendations and the correctness of their position on the list of recommendations. The product with the highest probability of purchase is placed first in the list.
 
-## Flask App
-In the app, the user can set a value of 1 or 0 for products. After that, the user receive the top 7 product recommendations.
-
-![hybrid recommendation app](https://user-images.githubusercontent.com/61654792/217187815-b65cf8db-e3bf-4880-898d-37189dce5a07.png)
 
