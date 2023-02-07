@@ -1,5 +1,7 @@
 ## 🏦 Santander Hybrid Recommendation System
 ### Summary
+![Weighted Hybrid Recommendation System](https://user-images.githubusercontent.com/61654792/217188533-4cc867f2-3888-4b7c-8028-c2971be6bafe.png)
+
 The goal of this project is to create a more effective recommendation system. This allows Santander bank to better meet the individual needs of all customers. To achieve this, the user-item matrix will be used containing the ID of consumers and the products they owned as of May 28, 2015. Then, recommendations in three different recommendation models will be calculated. It will be the popularity-based model, the memory-based collaborative filtering model, and the model-based collaborative filtering model. Then all three recommendations models will be combined into the weighted hybrid recommendation system. The result will be evaluated using average precision metrics.
 
 ## Project Description
@@ -109,3 +111,9 @@ def change_names(col_names, map_products=product_names):
 ```
 ### Evaluation
 In the evaluation, I use the average precision metric for 7 products. This metric checks the validity of the recommendations and the correctness of their position on the list of recommendations. The product with the highest probability of purchase is placed first in the list.
+
+## Flask App
+In the app, the user can set a value of 1 or 0 for products. After that, the user receive the top 7 product recommendations.
+
+![hybrid recommendation app](https://user-images.githubusercontent.com/61654792/217187815-b65cf8db-e3bf-4880-898d-37189dce5a07.png)
+
