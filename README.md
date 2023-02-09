@@ -17,6 +17,7 @@ The goal of this project is to create a more effective recommendation system. Th
 * Scikit-Learn
 * Pandas
 * Numpy
+* Flask
 * Recommender Systems
 
 ### Get Data
