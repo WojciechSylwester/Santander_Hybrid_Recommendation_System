@@ -1,7 +1,7 @@
 ## 🏦 Santander Hybrid Recommendation System
 ### Flask App
 
-![hybrid recommendation app](https://user-images.githubusercontent.com/61654792/217187815-b65cf8db-e3bf-4880-898d-37189dce5a07.png)
+![Hybrid_Recommendation_System_Flask](https://user-images.githubusercontent.com/61654792/217784429-b7dac0a3-cf7e-4b31-bd67-e37613ad5edb.png)
 
 In the app, the user can set a value of 1 or 0 for products. After that, the user receive the top 7 product recommendations.
 
