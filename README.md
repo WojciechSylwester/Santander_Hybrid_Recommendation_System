@@ -25,7 +25,7 @@ Dataset derives from Kaggle competition about Santander Product Recommendation.
 
 https://www.kaggle.com/competitions/santander-product-recommendation/data
 
-### Popular Recommendation System¶
+### Popular Recommendation System
 Function that calculates the probability of a product occurring in the user-item matrix. 
 
 ```python
