@@ -119,4 +119,18 @@ def change_names(col_names, map_products=product_names):
 ### Evaluation
 In the evaluation, I use the average precision metric for 7 products. This metric checks the validity of the recommendations and the correctness of their position on the list of recommendations. The product with the highest probability of purchase is placed first in the list.
 
+### Instructions for starting the Flask application
+```python
+# Run shell in in the project directory
+# Create your virtualenv
+python -m venv name_venv
 
+# Activate your virtualenv
+.\Scripts\activate
+
+# Install required packages
+pip install -r requirements.txt
+
+# Run the Flask app
+python app.py
+```
