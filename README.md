@@ -1,4 +1,5 @@
 ## 🏦 Santander Hybrid Recommendation System
+Kaggle Notebook 🡪 https://www.kaggle.com/code/wojteksy/santander-hybrid-recommendation-system
 ### Flask App
 
 ![Hybrid_Recommendation_System_Flask_App](https://user-images.githubusercontent.com/61654792/217787457-a61e7978-5bc4-4945-ad62-73d3db80b81f.png)
