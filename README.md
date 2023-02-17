@@ -1,7 +1,8 @@
 ## 🏦 Santander Hybrid Recommendation System
+Kaggle Notebook 🡪 https://www.kaggle.com/code/wojteksy/santander-hybrid-recommendation-system
 ### Flask App
 
-![hybrid recommendation app](https://user-images.githubusercontent.com/61654792/217187815-b65cf8db-e3bf-4880-898d-37189dce5a07.png)
+![Hybrid_Recommendation_System_Flask_App](https://user-images.githubusercontent.com/61654792/217787457-a61e7978-5bc4-4945-ad62-73d3db80b81f.png)
 
 In the app, the user can set a value of 1 or 0 for products. After that, the user receive the top 7 product recommendations.
 
@@ -17,6 +18,7 @@ The goal of this project is to create a more effective recommendation system. Th
 * Scikit-Learn
 * Pandas
 * Numpy
+* Flask
 * Recommender Systems
 
 ### Get Data
@@ -24,7 +26,7 @@ Dataset derives from Kaggle competition about Santander Product Recommendation.
 
 https://www.kaggle.com/competitions/santander-product-recommendation/data
 
-### Popular Recommendation System¶
+### Popular Recommendation System
 Function that calculates the probability of a product occurring in the user-item matrix. 
 
 ```python
@@ -118,4 +120,18 @@ def change_names(col_names, map_products=product_names):
 ### Evaluation
 In the evaluation, I use the average precision metric for 7 products. This metric checks the validity of the recommendations and the correctness of their position on the list of recommendations. The product with the highest probability of purchase is placed first in the list.
 
+## Instructions for starting the Flask application
+```python
+# Run shell in in the project directory
+# Create your virtualenv
+python -m venv name_venv
 
+# Activate your virtualenv
+.\Scripts\activate
+
+# Install required packages
+pip install -r requirements.txt
+
+# Run the Flask app
+python app.py
+```
