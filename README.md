@@ -16,7 +16,7 @@ The goal of this project is to create a more effective recommendation system. Th
 * Flask
 * Recommender Systems
 
-### Get Data
+### Data Source
 Dataset derives from Kaggle competition about Santander Product Recommendation.
 
 https://www.kaggle.com/competitions/santander-product-recommendation/data
