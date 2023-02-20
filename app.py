@@ -3,16 +3,7 @@ import recommendation_system as r
 
 header = st.container()
 
-st.markdown(
-    '''
-    <style>
-    .main {
-    background-color: #F5F5F5;
-    }
-    </style>
-    ''',
-    unsafe_allow_html=True
-)
+
 
 @st.cache_data
 def get_data():
