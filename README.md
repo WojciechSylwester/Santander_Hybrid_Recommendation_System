@@ -117,13 +117,11 @@ def change_names(col_names, map_products=product_names):
 ### Evaluation
 In the evaluation, I use the average precision metric for 7 products. This metric checks the validity of the recommendations and the correctness of their position on the list of recommendations. The product with the highest probability of purchase is placed first in the list.
 
-## Flask App
-
-![Hybrid_Recommendation_System_Streamlit_App](https://user-images.githubusercontent.com/61654792/220083202-e1ff18f3-dfe2-4049-81dc-e7e28730361b.png)
+## Streamlit App
 
 In the app, the user can select the products that he or she owns. After that, the user receive the top 7 product recommendations.
 
-### Instructions for starting the Flask application
+### Instructions for starting the Streamlit application
 
 ```python
 # Run shell in in the project directory
@@ -136,6 +134,6 @@ python -m venv name_venv
 # Install required packages
 pip install -r requirements.txt
 
-# Run the Flask app
+# Run the Streamlit app
 streamlit run app.py
 ```
