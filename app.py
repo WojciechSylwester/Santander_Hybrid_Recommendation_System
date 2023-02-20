@@ -25,17 +25,22 @@ with header:
 
 col1, col2 = st.columns(2)
 
+product_list = [product for product in r.product_names.values()]
+
+
 with col1:
-    arr1 = [ (1 if (st.radio('Product '+str(i), ['Not Owns', 'Owns'], horizontal=True, index=0)) == 'Owns' else 0) for i in range(1,13)]
+    arr1 = [ (1 if (st.radio(str(product_list[i]), ['Not Owns', 'Owns'], horizontal=True, index=0)) == 'Owns' else 0) for i in range(0,12)]
 
 
 with col2:
-    arr2 = [ (1 if (st.radio('Product '+str(i), ['Not Owns', 'Owns'], horizontal=True, index=0)) == 'Owns' else 0) for i in range(13,25)]
+    arr2 = [ (1 if (st.radio(str(product_list[i]), ['Not Owns', 'Owns'], horizontal=True, index=0)) == 'Owns' else 0) for i in range(12,24)]
 
 
-click = st.button('pred')
+click = st.button('Get Recommendations')
 
 if click:
+    st.markdown('Due to the calculation of the machine learning model you have to wait a few seconds for the result.')
+
     df_train1505 = get_data()
     df_train1505 = r.add_user_input(arr1 + arr2, df_train1505)
     df_ui = r.df_useritem(df_train1505)
@@ -48,6 +53,5 @@ if click:
 
     rec = r.recommendation(0, df_mb, hybrid_rec)
 
-    st.text('Due to the calculation of the machine learning model you have to wait 1 min for the result.')
     st.text('Recommended products:')
     for ix, product in enumerate(rec): st.write(str(ix + 1), ". ", product)
