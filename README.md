@@ -1,4 +1,6 @@
 ## 🏦 Santander Hybrid Recommendation System
+APP link 🡪 https://santander-recommendation.streamlit.app
+
 Kaggle Notebook 🡪 https://www.kaggle.com/code/wojteksy/santander-hybrid-recommendation-system
 
 ### Summary
@@ -117,9 +119,9 @@ In the evaluation, I use the average precision metric for 7 products. This metri
 
 ## Flask App
 
-![Hybrid_Recommendation_System_Flask_App](https://user-images.githubusercontent.com/61654792/217787457-a61e7978-5bc4-4945-ad62-73d3db80b81f.png)
+![Hybrid_Recommendation_System_Streamlit_App](https://user-images.githubusercontent.com/61654792/220083202-e1ff18f3-dfe2-4049-81dc-e7e28730361b.png)
 
-In the app, the user can set a value of 1 or 0 for products. After that, the user receive the top 7 product recommendations.
+In the app, the user can select the products that he or she owns. After that, the user receive the top 7 product recommendations.
 
 ### Instructions for starting the Flask application
 
@@ -135,5 +137,5 @@ python -m venv name_venv
 pip install -r requirements.txt
 
 # Run the Flask app
-python app.py
+streamlit run app.py
 ```
