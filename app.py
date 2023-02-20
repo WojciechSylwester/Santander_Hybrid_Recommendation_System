@@ -14,7 +14,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-
 @st.cache_data
 def get_data():
     df_train1505 = r.load_csv()
