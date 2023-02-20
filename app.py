@@ -20,20 +20,18 @@ def get_data():
     return df_train1505
 
 with header:
-    st.title("nagloweeek")
-    st.header('robie to dlatego bo i to ma taką logikę')
+    st.header("Santander Recommendation System")
+    st.markdown('Hybrid recommendation system provides product recommendations based on consumer behaviour. The system was based on 3 recommendation engines. One looked for similarities between users and recommended products with the highest likelihood ratio. The next recommendation engine was based on a machine learning model that recommended suitable products based on classification.  The third model was based on the most popular products. The results of all recommendation engines were combined using weights. Finally, the user was presented with a list of recommended products.')
 
 col1, col2 = st.columns(2)
 
 with col1:
-    arr1 = [ (1 if (st.radio('prod'+str(i), ['nie posiadam', 'posiadam'], horizontal=True, index=0)) == 'posiadam' else 0) for i in range(1,13)]
+    arr1 = [ (1 if (st.radio('Product '+str(i), ['Not Owns', 'Owns'], horizontal=True, index=0)) == 'Owns' else 0) for i in range(1,13)]
 
-    st.text(arr1)
 
 with col2:
-    arr2 = [ (1 if (st.radio('prod'+str(i), ['nie posiadam', 'posiadam'], horizontal=True, index=0)) == 'posiadam' else 0) for i in range(13,25)]
+    arr2 = [ (1 if (st.radio('Product '+str(i), ['Not Owns', 'Owns'], horizontal=True, index=0)) == 'Owns' else 0) for i in range(13,25)]
 
-    st.text(arr2)
 
 click = st.button('pred')
 
@@ -50,5 +48,6 @@ if click:
 
     rec = r.recommendation(0, df_mb, hybrid_rec)
 
-    st.text('Najbardziej rekomendowane produkty to:')
+    st.text('Due to the calculation of the machine learning model you have to wait 1 min for the result.')
+    st.text('Recommended products:')
     for ix, product in enumerate(rec): st.write(str(ix + 1), ". ", product)
