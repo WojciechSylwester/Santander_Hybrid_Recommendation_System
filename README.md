@@ -1,5 +1,5 @@
 ## 🏦 Santander Hybrid Recommendation System
-APP link 🡪 https://santander-recommendation.streamlit.app
+Streamlit App 🡪 https://santander-recommendation.streamlit.app
 
 Kaggle Notebook 🡪 https://www.kaggle.com/code/wojteksy/santander-hybrid-recommendation-system
 
@@ -15,7 +15,7 @@ The goal of this project is to create a more effective recommendation system. Th
 * Scikit-Learn
 * Pandas
 * Numpy
-* Flask
+* Streamlit
 * Recommender Systems
 
 ### Data Source
