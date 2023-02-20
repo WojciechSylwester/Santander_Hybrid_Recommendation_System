@@ -198,14 +198,14 @@ product_names = {"ind_ahor_fin_ult1" : "Saving Account",
 "ind_ecue_fin_ult1" : "E-account",
 "ind_fond_fin_ult1" : "Funds",
 "ind_hip_fin_ult1" : "Mortgage",
-"ind_plan_fin_ult1" : "Pensions Fin",
+"ind_plan_fin_ult1" : "Plan Pensions",
 "ind_pres_fin_ult1" : "Loans",
 "ind_reca_fin_ult1" : "Taxes",
 "ind_tjcr_fin_ult1" : "Credit Card",
 "ind_valo_fin_ult1" : "Securities",
 "ind_viv_fin_ult1" : "Home Account",
 "ind_nomina_ult1" : "Payroll",
-"ind_nom_pens_ult1" : "Pensions ",
+"ind_nom_pens_ult1" : "Pensions",
 "ind_recibo_ult1" : "Direct Debit"}
 
 def change_names(col_names, map_products=product_names):
